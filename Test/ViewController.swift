@@ -8,7 +8,6 @@
 
 import UIKit
 
-//이전 다음버튼 테스트
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
@@ -18,7 +17,6 @@ class ViewController: UIViewController {
         
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        
         
         //다음버튼
         let 다음버튼 = UIButton.init(type: .custom)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lLb-oM-Sxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -34,8 +34,46 @@
             </objects>
             <point key="canvasLocation" x="141" y="94"/>
         </scene>
+        <!--Art Code View Controller-->
+        <scene sceneID="sJ1-XB-gLr">
+            <objects>
+                <viewController id="lLb-oM-Sxa" customClass="ArtCodeViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m0G-sZ-e4I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monarisa" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-Oi-OF1">
+                                <rect key="frame" x="0.0" y="44" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Rkw-ui-PYT"/>
+                                    <constraint firstAttribute="height" constant="300" id="mrL-V2-Fy9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-Bs-HuQ">
+                                <rect key="frame" x="20" y="524" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="24y-Qx-uU7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ywi-Oi-OF1" firstAttribute="top" secondItem="24y-Qx-uU7" secondAttribute="top" id="4V6-qF-1sL"/>
+                            <constraint firstItem="ywi-Oi-OF1" firstAttribute="leading" secondItem="24y-Qx-uU7" secondAttribute="leading" id="od6-i9-Ha5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ywi-Oi-OF1" id="Mng-7f-uft"/>
+                        <outlet property="testView" destination="kfe-Bs-HuQ" id="BtQ-ul-csE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIo-wD-7qz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="832"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="monarisa" width="358" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
