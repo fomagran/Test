@@ -8,38 +8,49 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
-
-    @IBOutlet weak var textField: UITextField!
-
+    
+    let userDefaults = UserDefaults.standard
+    var allFoods:[Food]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadAllFoods()
+        print(allFoods)
+    }
+    
+    private func addFood() {
         
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        //다음버튼
-        let 다음버튼 = UIButton.init(type: .custom)
-        다음버튼.setTitle("Done", for: .normal)
-        다음버튼.setTitleColor(.black, for: .normal)
-        다음버튼.backgroundColor = .white
-        다음버튼.layer.cornerRadius = 10
-        다음버튼.addTarget(self, action:#selector(doneBtnfromKeyboardClicked), for:.touchUpInside)
-        다음버튼.frame = CGRect.init(x: 0, y: 0, width:50, height: 30)
+        let 짜장면 = Food(name: "짜장면", price: 6000, isDelicious: true)
+        let 샐러드 = Food(name: "샐러드", price: 4500, isDelicious: false)
+        let 소고기 = Food(name: "소고기", price: 25000, isDelicious: true)
         
         
-        let 빈공간 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        allFoods = [짜장면,샐러드,소고기]
         
-        let 바다음버튼 = UIBarButtonItem.init(customView: 다음버튼)
-        
-        //toolbar 아이템에 바이전버튼,바다음버튼을 넣어준다.
-        toolBar.items = [빈공간,바다음버튼]
-        
-        textField.inputAccessoryView = toolBar
+        for food in allFoods!{
+            saveAllFoods(food: food)
+        }
         
     }
     
-    @objc func doneBtnfromKeyboardClicked (){
-        self.view.endEditing(true)
+    private func saveAllFoods(food:Food) {
+        if allFoods != nil {
+            if !allFoods!.contains(food) {
+                allFoods!.append(food)
+            }
+        }else{
+            allFoods = [food]
+        }
+        userDefaults.setValue(try? PropertyListEncoder().encode(allFoods!), forKey: "Foods")
+        userDefaults.synchronize()
+    }
+    
+    private func loadAllFoods() {
+        if let data = userDefaults.value(forKey: "Foods") as? Data {
+            allFoods = try? PropertyListDecoder().decode(Array<Food>.self,from: data)
+        }
     }
 }
+  
