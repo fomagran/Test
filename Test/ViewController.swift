@@ -38,8 +38,8 @@ class ViewController: UIViewController ,MKMapViewDelegate{
         setupData()
         
         let artwork = Marker(
-          title: "King David Kalakaua",
-          locationName: "Waikiki Gateway Park",
+          title: "임오빌딩",
+          locationName: "우리집 앞 임오빌딩",
           discipline: "Sculpture",
           coordinate: CLLocationCoordinate2D(latitude: 37.558529, longitude: 126.917449))
         mapView.addAnnotation(artwork)
@@ -123,10 +123,21 @@ class ViewController: UIViewController ,MKMapViewDelegate{
                   let size = CGSize(width: 25, height: 25)
                   UIGraphicsBeginImageContext(size)
             pinImage.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
-                  let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
             annotationView.image = resizedImage
+            
         }
-
+        
+        let annotationLabel = UILabel(frame: CGRect(x: 0, y: -35, width: 45, height: 15))
+        annotationLabel.backgroundColor = .systemOrange
+        annotationLabel.textColor = .white
+        annotationLabel.numberOfLines = 3
+        annotationLabel.textAlignment = .center
+        annotationLabel.font = UIFont.boldSystemFont(ofSize: 10)
+        annotationLabel.tag = 22
+        annotationLabel.text = annotation.title!
+        annotationView?.addSubview(annotationLabel)
+        
         return annotationView
     }
     
