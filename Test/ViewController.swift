@@ -36,6 +36,13 @@ class ViewController: UIViewController ,MKMapViewDelegate{
         mapView.userTrackingMode = .follow
      
         setupData()
+        
+        let artwork = Marker(
+          title: "King David Kalakaua",
+          locationName: "Waikiki Gateway Park",
+          discipline: "Sculpture",
+          coordinate: CLLocationCoordinate2D(latitude: 37.558529, longitude: 126.917449))
+        mapView.addAnnotation(artwork)
 
 
     }
@@ -54,23 +61,14 @@ class ViewController: UIViewController ,MKMapViewDelegate{
                                                                          longitude: coordinate.longitude), radius: regionRadius, identifier: title)
             
             let test2 = CLLocationCoordinate2D(latitude:latitude!,longitude:longitude!)
-            
-            
-            let point1 = CLLocationCoordinate2D(latitude: 37.558529,
-                                              longitude: 126.917449)
+  
+            addressToCoordinate(address: "서울특별시 마포구 성산동 631-5")
+            print(latitude,longitude)
 
-            let point2 = CLLocationCoordinate2D(latitude: 37.558630,
-                                              longitude: 126.918196)
-            let point3 = CLLocationCoordinate2D(latitude: 37.559228,
-                                              longitude: 126.918080)
-            let point4 = CLLocationCoordinate2D(latitude: 37.559340,
-                                              longitude: 126.917441)
-            
-            print(region.contains(test2))
-            print(region.contains(point1))
-            print(region.contains(point2))
-            print(region.contains(point3))
-            print(region.contains(point4))
+            let point1 = CLLocationCoordinate2D(latitude: 37.558529,longitude: 126.917449)
+            let point2 = CLLocationCoordinate2D(latitude: 37.558630,longitude: 126.918196)
+            let point3 = CLLocationCoordinate2D(latitude: 37.559228,longitude: 126.918080)
+            let point4 = CLLocationCoordinate2D(latitude: 37.559340,longitude: 126.917441)
             
            
             locationManager.startMonitoring(for: region)
@@ -98,6 +96,40 @@ class ViewController: UIViewController ,MKMapViewDelegate{
         return circleRenderer
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // Don't want to show a custom image if the annotation is the user's location.
+        guard !(annotation is MKUserLocation) else {
+            return nil
+        }
+
+        // Better to make this class property
+        let annotationIdentifier = "AnnotationIdentifier"
+
+        var annotationView: MKAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) {
+            annotationView = dequeuedAnnotationView
+            annotationView?.annotation = annotation
+        }
+        else {
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            annotationView = av
+        }
+
+        if let annotationView = annotationView {
+            // Configure your annotation view here
+            annotationView.canShowCallout = true
+            let pinImage = #imageLiteral(resourceName: "아파트")
+                  let size = CGSize(width: 25, height: 25)
+                  UIGraphicsBeginImageContext(size)
+            pinImage.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+                  let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            annotationView.image = resizedImage
+        }
+
+        return annotationView
+    }
+    
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         showAlert("enter \(region.identifier)")
@@ -121,7 +153,36 @@ class ViewController: UIViewController ,MKMapViewDelegate{
                locationManager.delegate = self
                locationManagerDidChangeAuthorization(locationManager)
        }
+    
+    func coordinateToAddress(lat:Double,lon:Double) {
+        let location: CLLocation = CLLocation(latitude: lat, longitude: lon)
+        let geocoder = CLGeocoder()
+            geocoder.reverseGeocodeLocation(location) { (placemarksArray, error) in
+                print(placemarksArray!)
+                if (error) == nil {
+                    if placemarksArray!.count > 0 {
+                        let placemark = placemarksArray?[0]
+                        let address = "\(placemark?.subThoroughfare ?? ""), \(placemark?.thoroughfare ?? ""), \(placemark?.locality ?? ""), \(placemark?.subLocality ?? ""), \(placemark?.administrativeArea ?? ""), \(placemark?.postalCode ?? ""), \(placemark?.country ?? "")"
+                        print("\(address)")
+                    }
+                }
 
+            }
+    }
+    
+    func addressToCoordinate(address:String) {
+        let geoCoder = CLGeocoder()
+           geoCoder.geocodeAddressString(address) { (placemarks, error) in
+               guard
+                   let placemarks = placemarks,
+                   let location = placemarks.first?.location
+               else {
+                    print("No Location")
+                   return
+               }
+            print(location.coordinate)
+           }
+    }
 }
 
 extension ViewController:CLLocationManagerDelegate {

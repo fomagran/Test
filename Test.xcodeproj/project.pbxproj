@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0420E73B25FDD12000677B9F /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420E73A25FDD12000677B9F /* Mark.swift */; };
 		045D747E25E89E3300899E80 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D747D25E89E3300899E80 /* Food.swift */; };
 		04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDA25BACFB8004DD69D /* AppDelegate.swift */; };
 		04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDC25BACFB8004DD69D /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0420E73A25FDD12000677B9F /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		045D747D25E89E3300899E80 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		04652FD725BACFB8004DD69D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04652FDA25BACFB8004DD69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */,
 				04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */,
 				045D747D25E89E3300899E80 /* Food.swift */,
+				0420E73A25FDD12000677B9F /* Mark.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
+				0420E73B25FDD12000677B9F /* Mark.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
 				045D747E25E89E3300899E80 /* Food.swift in Sources */,
