@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0420E73B25FDD12000677B9F /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420E73A25FDD12000677B9F /* Mark.swift */; };
+		0420E73B25FDD12000677B9F /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420E73A25FDD12000677B9F /* Marker.swift */; };
 		045D747E25E89E3300899E80 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D747D25E89E3300899E80 /* Food.swift */; };
 		04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDA25BACFB8004DD69D /* AppDelegate.swift */; };
 		04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDC25BACFB8004DD69D /* SceneDelegate.swift */; };
@@ -16,12 +16,14 @@
 		04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE325BACFBA004DD69D /* Assets.xcassets */; };
 		04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */; };
 		04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */; };
+		04FB319025FF52910016637D /* 아파트 정보.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04FB318F25FF52910016637D /* 아파트 정보.txt */; };
+		04FB319325FF651F0016637D /* 아파트 위도경도.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB319225FF651F0016637D /* 아파트 위도경도.swift */; };
 		04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */; };
 		4F85B7E0AD2783DA390572ED /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847D5D716F656C99E1E6BF66 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0420E73A25FDD12000677B9F /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		0420E73A25FDD12000677B9F /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		045D747D25E89E3300899E80 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		04652FD725BACFB8004DD69D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04652FDA25BACFB8004DD69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeViewController.swift; sourceTree = "<group>"; };
 		04EA111825BBED53005E78DC /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		04EA111A25BBF286005E78DC /* AlgorithmTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlgorithmTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		04FB318F25FF52910016637D /* 아파트 정보.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "아파트 정보.txt"; sourceTree = "<group>"; };
+		04FB319225FF651F0016637D /* 아파트 위도경도.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "아파트 위도경도.swift"; sourceTree = "<group>"; };
 		04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		67A0CE835FAAD3F0201D917C /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		6B5CA6955651553F09EB7771 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 				04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */,
 				04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */,
 				045D747D25E89E3300899E80 /* Food.swift */,
-				0420E73A25FDD12000677B9F /* Mark.swift */,
+				0420E73A25FDD12000677B9F /* Marker.swift */,
+				04FB318F25FF52910016637D /* 아파트 정보.txt */,
+				04FB319225FF651F0016637D /* 아파트 위도경도.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FB319025FF52910016637D /* 아파트 정보.txt in Resources */,
 				04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */,
 				04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */,
 				04652FE225BACFB8004DD69D /* Main.storyboard in Resources */,
@@ -222,9 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */,
+				04FB319325FF651F0016637D /* 아파트 위도경도.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
-				0420E73B25FDD12000677B9F /* Mark.swift in Sources */,
+				0420E73B25FDD12000677B9F /* Marker.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
 				045D747E25E89E3300899E80 /* Food.swift in Sources */,
