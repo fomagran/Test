@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0420E73B25FDD12000677B9F /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420E73A25FDD12000677B9F /* Marker.swift */; };
+		04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */; };
+		04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */; };
 		045D747E25E89E3300899E80 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D747D25E89E3300899E80 /* Food.swift */; };
 		04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDA25BACFB8004DD69D /* AppDelegate.swift */; };
 		04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDC25BACFB8004DD69D /* SceneDelegate.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		0420E73A25FDD12000677B9F /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeCollectionViewController.swift; sourceTree = "<group>"; };
+		04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		045D747D25E89E3300899E80 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		04652FD725BACFB8004DD69D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04652FDA25BACFB8004DD69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				0420E73A25FDD12000677B9F /* Marker.swift */,
 				04FB318F25FF52910016637D /* 아파트 정보.txt */,
 				04FB319225FF651F0016637D /* 아파트 위도경도.swift */,
+				04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */,
+				04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 			files = (
 				04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */,
 				04FB319325FF651F0016637D /* 아파트 위도경도.swift in Sources */,
+				04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
+				04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */,
 				0420E73B25FDD12000677B9F /* Marker.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
