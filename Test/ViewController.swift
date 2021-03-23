@@ -22,31 +22,58 @@ class ViewController: UIViewController ,MKMapViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let 송파구 = APT_LOCATIONS.components(separatedBy: "\n").filter{$0.contains("송파구")}
+        for (i,송파구아파트) in 송파구.enumerated() {
+            if i > 0 {
+                break
+            }
+            print("대표",송파구아파트)
+            let split송파구아파트 = 송파구아파트.components(separatedBy: ",")
+            let repLat = split송파구아파트[split송파구아파트.count - 2]
+            let repLon = split송파구아파트[split송파구아파트.count - 1]
+            for 아파트 in APT_LOCATIONS.components(separatedBy: "\n") {
+                let split아파트 = 아파트.components(separatedBy: ",")
+                let lat = split아파트[split아파트.count - 2]
+                let lon = split아파트[split아파트.count - 1]
+                if lat == "null" || lon == "null" {
+                    continue
+                }
+                let rep = CLLocation(latitude: Double(repLat)!, longitude: Double(repLon)!)
+                let e = CLLocation(latitude: Double(lat)!, longitude: Double(lon)!)
+                let distanceInMeters = e.distance(from: rep)
+                if distanceInMeters == 0.0 {
+                    continue
+                }
+                if Int(String(distanceInMeters).components(separatedBy: ".").first!)! <= 1000 {
+                    print(아파트)
+                }
+            }
+        }
         
 
-        locationManager.delegate = self;
-        locationManager.distanceFilter = kCLLocationAccuracyNearestTenMeters;
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        
-        requestAuthorization()
-     
-        mapView.delegate = self
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
-    
-        let mark1 = Marker(
-          title: "홍대입구역",
-          subtitle: "사람이 너무 많아요..ㅜ",
-          coordinate: CLLocationCoordinate2D(latitude: 37.55769, longitude: 126.92450))
-        mapView.addAnnotation(mark1)
-        
-        let mark2 = Marker(
-          title: "홍대입구역스타벅스",
-          subtitle: "커피 맛있다",
-          coordinate: CLLocationCoordinate2D(latitude: 37.557123, longitude: 126.923588))
-        mapView.addAnnotation(mark2)
-        
-        detectMarkerLocation()
+//        locationManager.delegate = self;
+//        locationManager.distanceFilter = kCLLocationAccuracyNearestTenMeters;
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//        
+//        requestAuthorization()
+//     
+//        mapView.delegate = self
+//        mapView.showsUserLocation = true
+//        mapView.userTrackingMode = .follow
+//    
+//        let mark1 = Marker(
+//          title: "홍대입구역",
+//          subtitle: "사람이 너무 많아요..ㅜ",
+//          coordinate: CLLocationCoordinate2D(latitude: 37.55769, longitude: 126.92450))
+//        mapView.addAnnotation(mark1)
+//        
+//        let mark2 = Marker(
+//          title: "홍대입구역스타벅스",
+//          subtitle: "커피 맛있다",
+//          coordinate: CLLocationCoordinate2D(latitude: 37.557123, longitude: 126.923588))
+//        mapView.addAnnotation(mark2)
+//        
+//        detectMarkerLocation()
 
 
     }

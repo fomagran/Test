@@ -26,8 +26,8 @@ class ArtCodeViewController: UIViewController {
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(tapped))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGR)
-        for y in stride(from: 1, to: 800, by: 10){
-            for x in stride(from: 1, to: 400, by: 10) {
+        for y in stride(from: 10, to: 800, by: 20){
+            for x in stride(from: 0, to: 400, by: 20) {
                 let colorAtPixel : UIColor = (imageView.getPixelColor(atPosition: CGPoint(x: x, y: y)))
                 print(x,y)
                 colors.append(colorAtPixel)
