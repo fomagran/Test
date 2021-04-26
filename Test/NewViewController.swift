@@ -8,35 +8,47 @@
 import UIKit
 
 class NewViewController: UIViewController {
-
+    
     override func loadView() {
         super.loadView()
-        print("새로운 뷰 로드중~")
+        
+        
+        
+        let apts = APT_INFO.components(separatedBy: "\n")
+        
+        for apt in apts {
+            let split = apt.components(separatedBy: ",")
+            if split.count > 5 {
+            if split[5].contains("\"") {
+                var bool = false
+                var str = "\""
+                for s in apt {
+                    if bool == false {
+                        if String(s) == "\"" {
+                            bool = true
+                        }
+                    }else {
+                        if String(s) == "\"" {
+                            bool = false
+                            break
+                        }else {
+                            str += String(s)
+                        }
+                    }
+                }
+                
+                str.removeFirst()
+                let replace = str.replacingOccurrences(of: ",", with: " ")
+                let spReplace = apt.replacingOccurrences(of: "\"", with: "").replacingOccurrences(of: "\(str)", with: replace)
+                let replaceSplit = spReplace.components(separatedBy: ",")
+                print("\(replaceSplit[4]),\(replaceSplit[5]),\(replaceSplit[7]),\(replaceSplit[8])")
+            }else {
+                print("\(split[4]),\(split[5]),\(split[7]),\(split[8])")
+            }
+            }
+           
+        }
+        
+        
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("새로운 뷰 로드 되었어요~")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        print("새로운 뷰 이제 곧 보일거에요~")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print("새로운 뷰 나타났어요~")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        print("새로운 뷰 이제 곧 사라질거에요~")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
-        print("새로운 뷰 사라졌어요~")
-    }
-
 }
