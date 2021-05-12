@@ -1,20 +1,21 @@
-import CoreLocation
+import Foundation
 
 
-func addressToCoordinate(str:String,address:String){
-    let geoCoder = CLGeocoder()
-       geoCoder.geocodeAddressString(address) { (placemarks, error) in
-           guard
-               let placemarks = placemarks,
-               let location = placemarks.first?.location
-           else {
-                print("No Location")
-               return
-           }
-
-        print("\(str),\(location.coordinate.latitude),\(location.coordinate.longitude)")
-       }
+func firstClassObject(_ a:Int,_ b:Int) -> Int {
+    return a+b
 }
 
+let aPlusB = firstClassObject(1, 2)
 
-addressToCoordinate(str: "", address: "서울특별시 노원구 중계로 184")
+func paramAPlusB(a:Int,b:Int,aPlusB:(Int,Int)->Int) {
+   print(aPlusB(a,b))
+}
+
+paramAPlusB(a: 1, b: 2, aPlusB:firstClassObject(_:_:))
+
+func returnAndParamAPlusB(a:Int,b:Int,aPlusB:(Int,Int)->Int) -> Int {
+    
+    return aPlusB(a,b)
+}
+
+returnAndParamAPlusB(a: 1, b: 2, aPlusB: firstClassObject(_:_:))

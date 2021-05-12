@@ -21,6 +21,7 @@
 		0467E69E260B21E800C1C416 /* ViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E69D260B21E800C1C416 /* ViewControllerLifeCycle.swift */; };
 		0467E6A1260B247000C1C416 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E6A0260B247000C1C416 /* NewViewController.swift */; };
 		04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */; };
+		04B08E8E2639404C00FF482A /* Enum Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B08E8D2639404C00FF482A /* Enum Example.swift */; };
 		04E6EAEC26368D6500F0DFC2 /* 아파트엑셀.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */; };
 		04E6EAF12636912D00F0DFC2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6EAF02636912D00F0DFC2 /* test.swift */; };
 		04FB319025FF52910016637D /* 아파트 정보.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04FB318F25FF52910016637D /* 아파트 정보.txt */; };
@@ -46,6 +47,7 @@
 		0467E69D260B21E800C1C416 /* ViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifeCycle.swift; sourceTree = "<group>"; };
 		0467E6A0260B247000C1C416 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeViewController.swift; sourceTree = "<group>"; };
+		04B08E8D2639404C00FF482A /* Enum Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum Example.swift"; sourceTree = "<group>"; };
 		04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "아파트엑셀.swift"; sourceTree = "<group>"; };
 		04E6EAF02636912D00F0DFC2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		04EA111825BBED53005E78DC /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -113,6 +115,7 @@
 				0465E205261313C600578D94 /* TableViewController.swift */,
 				04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */,
 				04E6EAF02636912D00F0DFC2 /* test.swift */,
+				04B08E8D2639404C00FF482A /* Enum Example.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				04E6EAEC26368D6500F0DFC2 /* 아파트엑셀.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
 				04E6EAF12636912D00F0DFC2 /* test.swift in Sources */,
+				04B08E8E2639404C00FF482A /* Enum Example.swift in Sources */,
 				045D747E25E89E3300899E80 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
