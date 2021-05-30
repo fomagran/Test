@@ -1,21 +1,22 @@
 import Foundation
 
-
-func firstClassObject(_ a:Int,_ b:Int) -> Int {
-    return a+b
-}
-
-let aPlusB = firstClassObject(1, 2)
-
-func paramAPlusB(a:Int,b:Int,aPlusB:(Int,Int)->Int) {
-   print(aPlusB(a,b))
-}
-
-paramAPlusB(a: 1, b: 2, aPlusB:firstClassObject(_:_:))
-
-func returnAndParamAPlusB(a:Int,b:Int,aPlusB:(Int,Int)->Int) -> Int {
+class Person {
+    var name:String
     
-    return aPlusB(a,b)
+    init(name:String) {
+        self.name = name
+    }
 }
 
-returnAndParamAPlusB(a: 1, b: 2, aPlusB: firstClassObject(_:_:))
+let person = Person(name: "foma")
+
+let hello:((_ person:Person)->String) = { person in return "\(person.name) hello"}
+
+func escaping(completion:@escaping(Person)->String) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        print("From Escaping Closure",completion(person))
+    }
+}
+
+escaping(completion: hello)
+person.name = "gran"

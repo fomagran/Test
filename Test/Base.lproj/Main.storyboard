@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mbu-5U-PZO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -16,27 +16,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0bc-9q-iP4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FZ7-bE-Amb"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0bc-9q-iP4" secondAttribute="bottom" id="5bi-hB-Uai"/>
-                            <constraint firstItem="0bc-9q-iP4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HVa-kI-gRZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bc-9q-iP4" secondAttribute="trailing" id="PAc-aO-K3h"/>
-                            <constraint firstItem="0bc-9q-iP4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SBI-TV-GJ9"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NPD-DS-fer"/>
-                    <connections>
-                        <outlet property="mapView" destination="0bc-9q-iP4" id="aBe-70-0IJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="881" y="832"/>
         </scene>
-        <!--Image View Controller-->
+        <!--New View Controller-->
         <scene sceneID="E8Y-ha-FQD">
             <objects>
-                <viewController id="BEg-tG-HJB" customClass="ImageViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BEg-tG-HJB" customClass="NewViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ved-pt-qFs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,34 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0420E73B25FDD12000677B9F /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420E73A25FDD12000677B9F /* Marker.swift */; };
+		042595E72663B358000A8179 /* 기다린 만큼 더.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */; };
 		04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */; };
 		04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */; };
-		045D747E25E89E3300899E80 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D747D25E89E3300899E80 /* Food.swift */; };
 		04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDA25BACFB8004DD69D /* AppDelegate.swift */; };
 		04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDC25BACFB8004DD69D /* SceneDelegate.swift */; };
 		04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDE25BACFB8004DD69D /* ViewController.swift */; };
 		04652FE225BACFB8004DD69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE025BACFB8004DD69D /* Main.storyboard */; };
 		04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE325BACFBA004DD69D /* Assets.xcassets */; };
 		04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */; };
-		0465E206261313C600578D94 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465E205261313C600578D94 /* TableViewController.swift */; };
-		0467E69E260B21E800C1C416 /* ViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E69D260B21E800C1C416 /* ViewControllerLifeCycle.swift */; };
 		0467E6A1260B247000C1C416 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E6A0260B247000C1C416 /* NewViewController.swift */; };
 		04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */; };
-		04B08E8E2639404C00FF482A /* Enum Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B08E8D2639404C00FF482A /* Enum Example.swift */; };
-		04E6EAEC26368D6500F0DFC2 /* 아파트엑셀.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */; };
-		04E6EAF12636912D00F0DFC2 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6EAF02636912D00F0DFC2 /* test.swift */; };
-		04FB319025FF52910016637D /* 아파트 정보.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04FB318F25FF52910016637D /* 아파트 정보.txt */; };
-		04FB319325FF651F0016637D /* 아파트 위도경도.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB319225FF651F0016637D /* 아파트 위도경도.swift */; };
-		04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */; };
 		4F85B7E0AD2783DA390572ED /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847D5D716F656C99E1E6BF66 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0420E73A25FDD12000677B9F /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "기다린 만큼 더.mp3"; sourceTree = "<group>"; };
 		04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeCollectionViewController.swift; sourceTree = "<group>"; };
 		04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
-		045D747D25E89E3300899E80 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		04652FD725BACFB8004DD69D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04652FDA25BACFB8004DD69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04652FDC25BACFB8004DD69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,18 +33,9 @@
 		04652FE325BACFBA004DD69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04652FE625BACFBA004DD69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04652FE825BACFBA004DD69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0465E205261313C600578D94 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		0467E69D260B21E800C1C416 /* ViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifeCycle.swift; sourceTree = "<group>"; };
 		0467E6A0260B247000C1C416 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeViewController.swift; sourceTree = "<group>"; };
-		04B08E8D2639404C00FF482A /* Enum Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum Example.swift"; sourceTree = "<group>"; };
-		04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "아파트엑셀.swift"; sourceTree = "<group>"; };
-		04E6EAF02636912D00F0DFC2 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		04EA111825BBED53005E78DC /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		04EA111A25BBF286005E78DC /* AlgorithmTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlgorithmTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		04FB318F25FF52910016637D /* 아파트 정보.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "아파트 정보.txt"; sourceTree = "<group>"; };
-		04FB319225FF651F0016637D /* 아파트 위도경도.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "아파트 위도경도.swift"; sourceTree = "<group>"; };
-		04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		67A0CE835FAAD3F0201D917C /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		6B5CA6955651553F09EB7771 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		847D5D716F656C99E1E6BF66 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,21 +82,11 @@
 				04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */,
 				04652FE825BACFBA004DD69D /* Info.plist */,
 				04EA111825BBED53005E78DC /* Algorithm.playground */,
-				04EA111A25BBF286005E78DC /* AlgorithmTest.playground */,
 				04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */,
-				04FDCC8B25E7A8D200BCF12E /* TableViewCell.swift */,
-				045D747D25E89E3300899E80 /* Food.swift */,
-				0420E73A25FDD12000677B9F /* Marker.swift */,
-				04FB318F25FF52910016637D /* 아파트 정보.txt */,
-				04FB319225FF651F0016637D /* 아파트 위도경도.swift */,
 				04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */,
 				04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */,
-				0467E69D260B21E800C1C416 /* ViewControllerLifeCycle.swift */,
 				0467E6A0260B247000C1C416 /* NewViewController.swift */,
-				0465E205261313C600578D94 /* TableViewController.swift */,
-				04E6EAEB26368D6500F0DFC2 /* 아파트엑셀.swift */,
-				04E6EAF02636912D00F0DFC2 /* test.swift */,
-				04B08E8D2639404C00FF482A /* Enum Example.swift */,
+				042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -148,7 +119,7 @@
 				04652FD325BACFB8004DD69D /* Sources */,
 				04652FD425BACFB8004DD69D /* Frameworks */,
 				04652FD525BACFB8004DD69D /* Resources */,
-				A2B7CBBBB1E9A4C010560FED /* [CP] Embed Pods Frameworks */,
+				3A963D1091D4157CC71F55EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FB319025FF52910016637D /* 아파트 정보.txt in Resources */,
+				042595E72663B358000A8179 /* 기다린 만큼 더.mp3 in Resources */,
 				04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */,
 				04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */,
 				04652FE225BACFB8004DD69D /* Main.storyboard in Resources */,
@@ -206,6 +177,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A963D1091D4157CC71F55EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5906A9B704DD3E8826C2FEE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,23 +216,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A2B7CBBBB1E9A4C010560FED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,22 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FDCC8C25E7A8D200BCF12E /* TableViewCell.swift in Sources */,
-				0465E206261313C600578D94 /* TableViewController.swift in Sources */,
-				0467E69E260B21E800C1C416 /* ViewControllerLifeCycle.swift in Sources */,
-				04FB319325FF651F0016637D /* 아파트 위도경도.swift in Sources */,
 				0467E6A1260B247000C1C416 /* NewViewController.swift in Sources */,
 				04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
 				04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */,
-				0420E73B25FDD12000677B9F /* Marker.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
-				04E6EAEC26368D6500F0DFC2 /* 아파트엑셀.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
-				04E6EAF12636912D00F0DFC2 /* test.swift in Sources */,
-				04B08E8E2639404C00FF482A /* Enum Example.swift in Sources */,
-				045D747E25E89E3300899E80 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
