@@ -1,16 +1,21 @@
 import UIKit
-import FomaViewableSound
-
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var table: UITableView!
+    
+    private var dataSource:TableViewDataSource<NameTableViewCell,String>!
+    
+    var names:[String] = ["Foma","Gran","Young"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let foma = FomaViewableSound()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-        foma.show(on: self.view, in: self)
-        }
-    
+        
+        self.dataSource = TableViewDataSource(identifier: "NameTableViewCell", items: names, configure: { cell, item in
+            
+            cell.name.text
+        
+        })
+
     }
 }

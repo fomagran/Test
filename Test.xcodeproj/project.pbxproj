@@ -17,6 +17,9 @@
 		04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE325BACFBA004DD69D /* Assets.xcassets */; };
 		04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */; };
 		0467E6A1260B247000C1C416 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E6A0260B247000C1C416 /* NewViewController.swift */; };
+		04770EF326687FB3005D2BE8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04770EF226687FB3005D2BE8 /* TableViewDataSource.swift */; };
+		04770EF5266881F6005D2BE8 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04770EF4266881F6005D2BE8 /* NameTableViewCell.swift */; };
+		04770EF726688391005D2BE8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04770EF626688391005D2BE8 /* TableViewController.swift */; };
 		04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */; };
 		4F85B7E0AD2783DA390572ED /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847D5D716F656C99E1E6BF66 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +37,9 @@
 		04652FE625BACFBA004DD69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04652FE825BACFBA004DD69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0467E6A0260B247000C1C416 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		04770EF226687FB3005D2BE8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		04770EF4266881F6005D2BE8 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		04770EF626688391005D2BE8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeViewController.swift; sourceTree = "<group>"; };
 		04EA111825BBED53005E78DC /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67A0CE835FAAD3F0201D917C /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */,
 				0467E6A0260B247000C1C416 /* NewViewController.swift */,
 				042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */,
+				04770EF226687FB3005D2BE8 /* TableViewDataSource.swift */,
+				04770EF4266881F6005D2BE8 /* NameTableViewCell.swift */,
+				04770EF626688391005D2BE8 /* TableViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -225,9 +234,12 @@
 			files = (
 				0467E6A1260B247000C1C416 /* NewViewController.swift in Sources */,
 				04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */,
+				04770EF326687FB3005D2BE8 /* TableViewDataSource.swift in Sources */,
+				04770EF726688391005D2BE8 /* TableViewController.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
 				04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */,
+				04770EF5266881F6005D2BE8 /* NameTableViewCell.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
 			);
