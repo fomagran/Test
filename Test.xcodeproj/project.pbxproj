@@ -12,12 +12,10 @@
 		04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */; };
 		04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDA25BACFB8004DD69D /* AppDelegate.swift */; };
 		04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDC25BACFB8004DD69D /* SceneDelegate.swift */; };
-		04652FDF25BACFB8004DD69D /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDE25BACFB8004DD69D /* CharacterController.swift */; };
+		04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652FDE25BACFB8004DD69D /* ViewController.swift */; };
 		04652FE225BACFB8004DD69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE025BACFB8004DD69D /* Main.storyboard */; };
 		04652FE425BACFBA004DD69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE325BACFBA004DD69D /* Assets.xcassets */; };
 		04652FE725BACFBA004DD69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */; };
-		04770EFB2668AA2F005D2BE8 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04770EFA2668AA2F005D2BE8 /* CharacterView.swift */; };
-		04770EFD2668B5CB005D2BE8 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04770EFC2668B5CB005D2BE8 /* Character.swift */; };
 		04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */; };
 		4F85B7E0AD2783DA390572ED /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847D5D716F656C99E1E6BF66 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
@@ -29,13 +27,11 @@
 		04652FD725BACFB8004DD69D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04652FDA25BACFB8004DD69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04652FDC25BACFB8004DD69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04652FDE25BACFB8004DD69D /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		04652FDE25BACFB8004DD69D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04652FE125BACFB8004DD69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04652FE325BACFBA004DD69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04652FE625BACFBA004DD69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04652FE825BACFBA004DD69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04770EFA2668AA2F005D2BE8 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		04770EFC2668B5CB005D2BE8 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		04A28DA025C6AAC400B77784 /* ArtCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeViewController.swift; sourceTree = "<group>"; };
 		04EA111825BBED53005E78DC /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67A0CE835FAAD3F0201D917C /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +74,7 @@
 			children = (
 				04652FDA25BACFB8004DD69D /* AppDelegate.swift */,
 				04652FDC25BACFB8004DD69D /* SceneDelegate.swift */,
-				04652FDE25BACFB8004DD69D /* CharacterController.swift */,
+				04652FDE25BACFB8004DD69D /* ViewController.swift */,
 				04652FE025BACFB8004DD69D /* Main.storyboard */,
 				04652FE325BACFBA004DD69D /* Assets.xcassets */,
 				04652FE525BACFBA004DD69D /* LaunchScreen.storyboard */,
@@ -88,8 +84,6 @@
 				04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */,
 				04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */,
 				042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */,
-				04770EFA2668AA2F005D2BE8 /* CharacterView.swift */,
-				04770EFC2668B5CB005D2BE8 /* Character.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -227,13 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */,
-				04652FDF25BACFB8004DD69D /* CharacterController.swift in Sources */,
+				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
 				04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */,
 				04652FDD25BACFB8004DD69D /* SceneDelegate.swift in Sources */,
 				04A28DA125C6AAC400B77784 /* ArtCodeViewController.swift in Sources */,
-				04770EFB2668AA2F005D2BE8 /* CharacterView.swift in Sources */,
-				04770EFD2668B5CB005D2BE8 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
