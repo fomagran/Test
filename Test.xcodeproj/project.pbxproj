@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04039CBB268B1F7500D8846B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04039CBA268B1F7500D8846B /* CollectionViewCell.swift */; };
 		0410CBBF267986BC00B37357 /* UIVIewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410CBBE267986BC00B37357 /* UIVIewController + Extension.swift */; };
 		042595E72663B358000A8179 /* 기다린 만큼 더.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */; };
 		04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04039CBA268B1F7500D8846B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		0410CBBE267986BC00B37357 /* UIVIewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController + Extension.swift"; sourceTree = "<group>"; };
 		042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "기다린 만큼 더.mp3"; sourceTree = "<group>"; };
 		04472BA326061A0800FD4BDA /* ArtCodeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCodeCollectionViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				04472BA626061C7500FD4BDA /* TextCollectionViewCell.swift */,
 				042595E62663B358000A8179 /* 기다린 만큼 더.mp3 */,
 				0410CBBE267986BC00B37357 /* UIVIewController + Extension.swift */,
-				04039CBA268B1F7500D8846B /* CollectionViewCell.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -228,7 +225,6 @@
 			files = (
 				04472BA426061A0800FD4BDA /* ArtCodeCollectionViewController.swift in Sources */,
 				0410CBBF267986BC00B37357 /* UIVIewController + Extension.swift in Sources */,
-				04039CBB268B1F7500D8846B /* CollectionViewCell.swift in Sources */,
 				04652FDF25BACFB8004DD69D /* ViewController.swift in Sources */,
 				04652FDB25BACFB8004DD69D /* AppDelegate.swift in Sources */,
 				04472BA726061C7500FD4BDA /* TextCollectionViewCell.swift in Sources */,
