@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rzc-rq-BO1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lLb-oM-Sxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -57,7 +57,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="배달부" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-Oi-OF1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monarisa" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-Oi-OF1">
                                 <rect key="frame" x="0.0" y="44" width="414" height="800"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-Bs-HuQ">
@@ -66,18 +66,27 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-W7-cl0">
-                                <rect key="frame" x="189" y="691" width="36" height="30"/>
-                                <state key="normal" title="show"/>
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="u5o-uH-tvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="Change Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="tapShowButton:" destination="lLb-oM-Sxa" eventType="touchUpInside" id="u1j-vK-rEv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="24y-Qx-uU7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hFj-W7-cl0" firstAttribute="leading" secondItem="24y-Qx-uU7" secondAttribute="leading" id="2aR-Pw-41k"/>
+                            <constraint firstItem="24y-Qx-uU7" firstAttribute="trailing" secondItem="hFj-W7-cl0" secondAttribute="trailing" id="3ou-b6-sO2"/>
                             <constraint firstItem="hFj-W7-cl0" firstAttribute="centerX" secondItem="24y-Qx-uU7" secondAttribute="centerX" id="NHD-8p-A7q"/>
-                            <constraint firstItem="24y-Qx-uU7" firstAttribute="bottom" secondItem="hFj-W7-cl0" secondAttribute="bottom" constant="141" id="gpZ-eN-ki4"/>
+                            <constraint firstItem="24y-Qx-uU7" firstAttribute="bottom" secondItem="hFj-W7-cl0" secondAttribute="bottom" id="gpZ-eN-ki4"/>
                             <constraint firstItem="24y-Qx-uU7" firstAttribute="trailing" secondItem="ywi-Oi-OF1" secondAttribute="trailing" id="l7d-mm-agT"/>
                             <constraint firstItem="ywi-Oi-OF1" firstAttribute="leading" secondItem="24y-Qx-uU7" secondAttribute="leading" id="od6-i9-Ha5"/>
                             <constraint firstItem="ywi-Oi-OF1" firstAttribute="top" secondItem="24y-Qx-uU7" secondAttribute="top" id="w7W-cb-Ysb"/>
@@ -105,7 +114,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NSq-ah-DHG">
                                 <rect key="frame" x="0.0" y="44" width="414" height="800"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="800" id="E8S-Tv-IXd"/>
                                 </constraints>
@@ -148,7 +157,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gt5-AX-Eqy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gt5-AX-Eqy" firstAttribute="trailing" secondItem="NSq-ah-DHG" secondAttribute="trailing" id="Eu8-LG-kmo"/>
                             <constraint firstItem="NSq-ah-DHG" firstAttribute="top" secondItem="gt5-AX-Eqy" secondAttribute="top" id="J2C-dK-LJp"/>
@@ -242,12 +251,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="배달부" width="2316" height="3088"/>
+        <image name="monarisa" width="358" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

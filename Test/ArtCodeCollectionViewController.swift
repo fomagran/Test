@@ -11,7 +11,7 @@ class ArtCodeCollectionViewController: UIViewController {
     
     var colors = [UIColor]()
     var labels = [String]()
-    var letters = ["안","영","훈"]
+    var letters = ["A","R","T","C","O","D","E"]
     @IBOutlet weak var collection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
